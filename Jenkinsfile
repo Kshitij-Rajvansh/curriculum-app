@@ -6,5 +6,12 @@ pipeline {
         git(url: 'https://github.com/Kshitij-Rajvansh/curriculum-app', branch: 'dev')
       }
     }
+
+    stage('test command') {
+      steps {
+        sh 'ls -la'
+      }
+    }
+
   }
 }
